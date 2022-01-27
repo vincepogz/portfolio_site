@@ -194,45 +194,99 @@
 
 <!-- PROJECTS START HERE -->
 
-    <section class="site-section block__62272" id="portfolio-section">
+<section class="site-section block__62272" id="portfolio-section">
       
 
-      <div class="container">
-        <div class="row mb-5">
-          <div class="col-12 position-relative">
-            <h2 class="section-title text-center mb-5">My Portfolio</h2>
-          </div>
-        </div>
-
-        {% block content %}
-
-        {% load static %}
-        <div class="row">
-          {% for project in projects %}
-          <div class="col-lg-4 col-md-6">
-        
-            {% if project.url %}
-            <a href="{{ project.url }}">
-              <img src="{{ project.image.url }}" class="img-fluid mb-2">
-            </a>
-            {% else %}
-        
-            <img src="{{ project.image.url }}" class="img-fluid mb-2">
-            {% endif %}
-            <h3>{{ project.title }}</h3>
-            <p>{{ project.description }}</p>
-        
-          </div>
-          {% endfor %}
-        </div>
-        
-        {% endblock %}
-
-        </div>
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col-12 position-relative">
+        <h2 class="section-title text-center mb-5">My Portfolio</h2>
       </div>
+    </div>
 
-    </section>
+    
+    <div class="row">
+      
+      <div class="col-lg-4 col-md-6">
+    
+        
+        <a href="https://github.com/vincepogz/food-talk/blob/main/README.md">
+          <img src="https://raw.githubusercontent.com/vincepogz/portfolio_site/main/my_site/media/portfolio/images/mainLogo.png" target="_blank" class="img-fluid mb-2">
+        </a>
+        
+        <h3>Food Talk</h3>
+        <p>Group 3 enticing viewers with Food Recipe. This app is made using Django frameworks</p>
+    
+      </div>
+      
+      <div class="col-lg-4 col-md-6">
+    
+        
+        <a href="https://github.com/vincepogz/portfolio_site/blob/main/README.md">
+          <img src="https://raw.githubusercontent.com/vincepogz/portfolio_site/main/my_site/media/portfolio/images/heroku.PNG" target="_blank" class="img-fluid mb-2">
+        </a>
+        
+        <h3>Heroku</h3>
+        <p>Deployed my Django App to Heroku</p>
+    
+      </div>
+      
+      <div class="col-lg-4 col-md-6">
+    
+        
+        <a href="https://github.com/vincepogz/flask-blog-site/blob/main/README.md">
+          <img src="https://raw.githubusercontent.com/vincepogz/portfolio_site/main/my_site/media/portfolio/images/blog.PNG" target="_blank" class="img-fluid mb-2">
+        </a>
+        
+        <h3>Blog in Flask</h3>
+        <p>Group 2 presenting Blog in Flask</p>
+    
+      </div>
+      
+      <div class="col-lg-4 col-md-6">
+    
+        
+        <a href="https://github.com/vincepogz/CUNY2X-TTP-Notes/blob/main/_Projects/frontend_projects/dad_jokes/README.md">
+          <img src="https://raw.githubusercontent.com/vincepogz/portfolio_site/main/my_site/media/portfolio/images/dad.PNG" target="_blank" class="img-fluid mb-2">
+        </a>
+        
+        <h3>Dad Jokes</h3>
+        <p>Frontend Project with fetch function</p>
+    
+      </div>
+      
+      <div class="col-lg-4 col-md-6">
+    
+        
+        <a href="https://github.com/vincepogz/CUNY2X-TTP-Notes">
+          <img src="https://raw.githubusercontent.com/vincepogz/portfolio_site/main/my_site/media/portfolio/images/ttp.PNG" target="_blank" class="img-fluid mb-2">
+        </a>
+        
+        <h3>CUNY2X-TTP Notes</h3>
+        <p>This is all my notes from the bootcamp</p>
+    
+      </div>
+      
+      <div class="col-lg-4 col-md-6">
+    
+        
+        <a href="https://lifecycle380.herokuapp.com/">
+          <img src="https://raw.githubusercontent.com/vincepogz/portfolio_site/main/my_site/media/portfolio/images/lifecycle.PNG" target="_blank" class="img-fluid mb-2">
+        </a>
+        
+        <h3>LifeCycle</h3>
+        <p>Project based on React. This app is made to allow NYC viewers to check the closest recycling station in their area.</p>
+    
+      </div>
+      
+    </div>
+    
+    
 
+    
+  </div>
+
+</section>
 
 
     <section class="site-section"  id="dream-section">
